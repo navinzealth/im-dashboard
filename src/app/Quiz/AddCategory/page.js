@@ -54,7 +54,7 @@ async function uploadWithFormData() {
                      <div className='row' style={{borderBottom:'1px solid #e1e1e1',marginBottom:'25px'}} >
                        <div className='col-md-3'>
                          <div className='product_detail_tabs'>
-                             <li className='active'>Basic Info</li>
+                             <li className='active'>Basics Info</li>
                             </div>
                        </div>
                     </div>
