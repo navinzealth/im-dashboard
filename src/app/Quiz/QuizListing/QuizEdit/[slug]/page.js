@@ -228,7 +228,7 @@ let config = {method: 'post', maxBodyLength: Infinity, url: `${apiRoute}/deleteq
                               <Link variant="outlined" color="error" style={{width:'100%', fontSize:'15px',padding:'10px', display:'inline-block', textAlign:'center',border:'1px solid #000',color:'#000'}} href={`/Quiz/QuizListing/${data.quizCat}`}>  Back </Link>
                               </div>
                               <div className='col-md-4'>
-                              <Button variant="outlined" color="error" style={{width:'100%', fontSize:'15px',padding:'10px'}} onClick={deleteQuiz}>  Delete Blog </Button>
+                              <Button variant="outlined" color="error" style={{width:'100%', fontSize:'15px',padding:'10px'}} onClick={deleteQuiz}>  Delete Quiz </Button>
                               </div>
                               <div className='col-md-4'>
                               <Button variant="contained" color="success" style={{width:'100%', fontSize:'15px',padding:'10px'}} onClick={uploadWithFormData}> Update Quiz </Button>
