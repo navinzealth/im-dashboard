@@ -47,7 +47,7 @@ export default function Bannerdetail({ params } ){
 
     const [inventory, setInventory]= useState('inventory');
     const [nonInventoryType, setNonInventoryType]= useState('app');
-    const [inventoryType, setInventoryType] = useState('inventory');
+    const [inventoryType, setInventoryType] = useState('app');
     const handleInventoryType = (event) => { 
       if(event.target.value == 'inventory'){ setInventoryType('inventory') } 
       else{setInventoryType('app')}
@@ -209,9 +209,9 @@ async function deleteBanner(){
         <div className="col-md-8">
             <div className="input-field"> 
               <FormControl fullWidth> 
-              <Select defaultValue={nonInventoryType} value={nonInventoryType} onChange={handleInventoryType} style={{fontSize:'14px'}}>
-              <MenuItem value={inventory}>{inventory}</MenuItem>
-              <MenuItem value={nonInventoryType}>{nonInventoryType}</MenuItem> 
+              <Select defaultValue={inventoryType} value={inventoryType} onChange={handleInventoryType} style={{fontSize:'14px'}}>
+              <MenuItem value="inventory">Inventory</MenuItem>
+              <MenuItem value="app">App</MenuItem> 
               </Select>
               </FormControl>
             </div>
